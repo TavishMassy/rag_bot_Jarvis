@@ -13,7 +13,6 @@ services:
       - N8N_PROTOCOL=http
       - WEBHOOK_URL=http://localhost:5678/
       - GENERIC_TIMEZONE=Asia/Kolkata
-      # CORS settings for when you connect InfinityFree later
       - N8N_DEFAULT_CORS=true
       - N8N_CORS_ALLOW_ORIGIN=*
     volumes:

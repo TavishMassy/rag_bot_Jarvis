@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 
 # 1. Page Configuration
-st.set_page_config(page_title="VGU One | Policy Assistant", layout="centered")
+st.set_page_config(page_title="VGU One | Ai Assistant", layout="centered")
 
 # 2. Refined CSS (Forced Background and Tab Styling)
 st.markdown("""
@@ -50,14 +50,14 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 # 3. Create the Top Navigation Tabs (No Emojis, clean corporate text)
-tab_chat, tab_about, tab_connect = st.tabs(["Chat Assistant", "Architecture", "Connect"])
+tab_chat, tab_about, tab_connect = st.tabs(["Chat Ai", "Architecture", "Connect"])
 
 with tab_chat:
     st.markdown("""
     <div class="vgu-header">
         <div>
-            <p class="vgu-title">VGU Assistant</p>
-            <p class="vgu-subtitle">VGU Handbook, Clubs and ACIC Knowledge Base</p>
+            <p class="vgu-title">VGU One Ai Assistant</p>
+            <p class="vgu-subtitle">VGU Handbook, Hostel, Clubs and ACIC Knowledge Base</p>
             <div class="vgu-accent-bar"></div>
         </div>
     </div>
@@ -128,8 +128,8 @@ with tab_connect:
     <div class="info-panel" style="color: #393939;">
         <h3 style="margin-top:0; color: rgb(129, 24, 17);">Developer Profile</h3>
         <p><strong>Tavish Massy</strong></p>
-        <p>1st-Year CSE Student, Jaipur</p>
-        <p>Focusing on building enterprise bots, AI Automation, and Generative AI pipelines.</p>
+        <p>First Year Student, Jaipur</p>
+        <p>Focusing on building Bots, AI Automation, and Generative AI pipelines.</p>
         <div style="margin-top: 20px;">
             <a href="https://www.linkedin.com/in/tavish-massy-b0396a370/" target="_blank" style="text-decoration: none; background-color: rgb(129, 24, 17); color: white; padding: 10px 20px; border-radius: 5px; font-weight: 600; font-size: 0.9rem;">
                 Connect on LinkedIn
