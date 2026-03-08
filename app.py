@@ -57,6 +57,7 @@ with tab_chat:
     <div class="vgu-header">
         <div>
             <p class="vgu-title">VGU Assistant</p>
+            <p class="vgu-subtitle">VGU Handbook, Clubs and ACIC Knowledge Base</p>
             <div class="vgu-accent-bar"></div>
         </div>
     </div>
@@ -66,7 +67,7 @@ with tab_chat:
 
     # Initialize chat history
     if "messages" not in st.session_state:
-        st.session_state.messages = [{"role": "assistant", "content": "**Hello! Welcome to the VGU One Policy Assistant.**\n\nI am connected directly to the RAG architecture. You can ask me questions about the student handbook, such as:\n* *What different types of clubs are available?*\n* *How does the grading system work?*\n* *What are mess timings?*\n\nHow can I help you today?"}]
+        st.session_state.messages = [{"role": "assistant", "content": "**Hello! Welcome to the VGU One Policy Assistant.**\n\nI am connected directly to the RAG architecture. You can ask me questions about many things, such as:\n* *What different types of clubs are available?*\n* *How does the grading system work?*\n* *What are mess timings?*\n\nHow can I help you today?"}]
 
     # --- THE FIX: USE A CONTAINER FOR MESSAGES ---
     # This keeps the history separate from the input logic
