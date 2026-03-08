@@ -67,7 +67,7 @@ with tab_chat:
 
     # Initialize chat history
     if "messages" not in st.session_state:
-        st.session_state.messages = [{"role": "assistant", "content": "**Hello! Welcome to the VGU One Policy Assistant.**\n\nI am connected directly to the RAG architecture. You can ask me questions about many things, such as:\n* *What different types of clubs are available?*\n* *How does the grading system work?*\n* *What are mess timings?*\n\nHow can I help you today?"}]
+        st.session_state.messages = [{"role": "assistant", "content": "**Hello! Welcome to the VGU Assistant.**\n\nI am connected directly to the RAG architecture. You can ask me questions about many things, such as:\n* *What different types of clubs are available?*\n* *How does the grading system work?*\n* *What are mess timings?*\n\nHow can I help you today?"}]
 
     # --- THE FIX: USE A CONTAINER FOR MESSAGES ---
     # This keeps the history separate from the input logic
@@ -127,11 +127,11 @@ with tab_connect:
     st.markdown("""
     <div class="info-panel" style="color: #393939;">
         <h3 style="margin-top:0; color: rgb(129, 24, 17);">Developer Profile</h3>
-        <p><strong>Toothy</strong></p>
-        <p>1st-Year CSE Student, VGU, Jaipur</p>
+        <p><strong>Tavish Massy</strong></p>
+        <p>1st-Year CSE Student, Jaipur</p>
         <p>Focusing on building enterprise bots, AI Automation, and Generative AI pipelines.</p>
         <div style="margin-top: 20px;">
-            <a href="https://linkedin.com/in/yourprofile" target="_blank" style="text-decoration: none; background-color: rgb(129, 24, 17); color: white; padding: 10px 20px; border-radius: 5px; font-weight: 600; font-size: 0.9rem;">
+            <a href="https://www.linkedin.com/in/tavish-massy-b0396a370/" target="_blank" style="text-decoration: none; background-color: rgb(129, 24, 17); color: white; padding: 10px 20px; border-radius: 5px; font-weight: 600; font-size: 0.9rem;">
                 Connect on LinkedIn
             </a>
         </div>
