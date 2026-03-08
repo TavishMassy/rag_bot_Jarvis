@@ -67,7 +67,7 @@ with tab_chat:
 
     # Initialize chat history
     if "messages" not in st.session_state:
-        st.session_state.messages = [{"role": "assistant", "content": "**Hello! Welcome to the VGU Assistant.**\n\nI am connected directly to the RAG architecture. You can ask me questions about many things, such as:\n* *What different types of clubs are available?*\n* *How does the grading system work?*\n* *What are mess timings?*\n\nHow can I help you today?"}]
+        st.session_state.messages = [{"role": "assistant", "content": "**Hello! How can I help you?**\n\nYou can ask me questions about many things, such as:\n* *What different types of clubs are available?*\n* *How does the grading system work?*\n* *What are mess timings?*\n\n"}]
 
     # --- THE FIX: USE A CONTAINER FOR MESSAGES ---
     # This keeps the history separate from the input logic
