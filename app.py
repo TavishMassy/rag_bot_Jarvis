@@ -78,7 +78,7 @@ with tab_chat:
     </div>
     """, unsafe_allow_html=True)
 
-    N8N_WEBHOOK_URL = "https://Tamtedd-n8n.hf.space/webhook/3150ee5e-b2f3-4d44-9ea8-fd547fa6355c"
+    N8N_WEBHOOK_URL = "https://Tamtedd-n8n.hf.space/webhook/5f8469c2-9254-49bd-8936-b9647b3b36ef"
 
     # Initialize chat history
     if "messages" not in st.session_state:
