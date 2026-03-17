@@ -109,9 +109,23 @@ with tab_chat:
                 with st.spinner("Searching..."):
                     try:
                         response = requests.post(N8N_WEBHOOK_URL, json={"chatInput": prompt}, timeout=30)
-                        bot_reply = response.json().get("output", "Done.") if response.status_code == 200 else "Error."
-                        st.markdown(bot_reply)
-                        st.session_state.messages.append({"role": "assistant", "content": bot_reply})
+                        # 2. Check HTTP Status
+                        if response.status_code == 200:
+                            data = response.json()
+                            bot_reply = data.get("output")
+                            
+                            if bot_reply:
+                                st.markdown(bot_reply)
+                                st.session_state.messages.append({"role": "assistant", "content": bot_reply})
+                            else:
+                                st.warning("The server reached out, but returned an empty response.")
+                        
+                        elif response.status_code == 404:
+                            st.error("**Webhook Not Found:** Please check if the n8n workflow is active.")
+                        elif response.status_code == 500:
+                            st.error("**Server Error:** The n8n backend encountered a logic error.")
+                        else:
+                            st.error(f"**Unexpected Error:** Server returned status code {response.status_code}.")
                     except:
                         st.error("Connection failed.")
         
