@@ -143,7 +143,7 @@ with tab_about:
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px;">
             <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 5px solid rgb(129, 24, 17);">
                 <h4 style="margin-top:0;">🚀 Backend: n8n + Docker</h4>
-                <p style="font-size: 0.9rem;">Hosted on <strong>Hugging Face Spaces</strong> using a custom <strong>Node-Alpine</strong> Docker container. Optimized for low-latency orchestration and secure volume mapping for data persistence.</p>
+                <p style="font-size: 0.9rem;">Hosted on <strong>Railway.com</strong> using a <strong>Docker</strong> container. Optimized for low-latency orchestration and secure volume mapping for data persistence.</p>
             </div>
             <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 5px solid #F18F2C;">
                 <h4 style="margin-top:0;">🧠 Intelligence: Gemini AI</h4>
