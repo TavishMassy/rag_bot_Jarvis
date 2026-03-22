@@ -108,7 +108,7 @@ with tab_chat:
             with st.chat_message("assistant"):
                 with st.spinner("Searching..."):
                     try:
-                        response = requests.post(N8N_WEBHOOK_URL, json={"chatInput": prompt}, timeout=30)
+                        response = requests.post(N8N_WEBHOOK_URL, json={"chatInput": prompt}, timeout=10)
                         # 2. Check HTTP Status
                         if response.status_code == 200:
                             data = response.json()
@@ -126,6 +126,8 @@ with tab_chat:
                             st.error("**Server Error:** The n8n backend encountered a logic error.")
                         else:
                             st.error(f"**Unexpected Error:** Server returned status code {response.status_code}.")
+                    except requests.exceptions.Timeout:
+                        st.error("**Request Timed Out:** Looks like the developer has turned it off, so please request via 'connect' tab to start the backend.")
                     except:
                         st.error("Connection failed.")
         
