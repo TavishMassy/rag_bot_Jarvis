@@ -61,6 +61,28 @@ st.markdown("""
         button[data-baseweb="tab"]:hover p {
             color: #ff4448 !important;
         }
+
+        /* Unvisited link */
+        a:link {
+          color: #ffa421;
+          text-decoration: none; /* Removes the default underline */
+        }
+        
+        /* Visited link */
+        a:visited {
+          color: #f18f2c;
+        }
+        
+        /* Mouse over link */
+        a:hover {
+          color: #f18f2c;
+          text-decoration: underline; /* Adds underline on hover */
+        }
+        
+        /* Selected link */
+        a:active {
+          color: #f18f2c;
+        }
     </style>
     """, unsafe_allow_html=True)
 
