@@ -72,7 +72,7 @@ with tab_chat:
     <div class="vgu-header">
         <div>
             <p class="vgu-title">VGU One AI Assistant</p>
-            <p class="vgu-subtitle">VGU Handbook, Hostel, Clubs and ACIC Knowledge Base</p>
+            <p class="vgu-subtitle">VGU <a href="https://www.vgu.ac.in/Student%20Handbook%202025%20.pdf">Handbook</a>, <a href="https://www.vgu.ac.in/assets/HostelBooklet.pdf">Hostel</a>, <a href="https://www.vgu.ac.in/assets/important-resources/clubbrochure.pdf">Clubs</a> and <a href="https://www.vgu.ac.in/assets/important-resources/ACIC.pdf">ACIC</a> Knowledge Base</p>
             <div class="vgu-accent-bar"></div>
         </div>
     </div>
